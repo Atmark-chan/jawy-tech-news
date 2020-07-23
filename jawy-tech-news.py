@@ -50,21 +50,13 @@ mainTxt = m.group()
 
 # 投稿する文字列を生成
 addTxt \
-    # 改行 × 2
   = '\n\n' \
-    # 節見出し
    f'== [[m:Special:MyLanguage/Tech/News/{y}/{w}|Tech News: {y}-{w}]] ==' \
-    # 改行 × 2
     '\n\n' \
-    # 先ほど抜き出した文字列
    f'{mainTxt}' \
-    # 改行 × 2
     '\n\n' \
-    # 水平線
    '----' \
-    # 改行
     '\n' \
-    # 追記部分
    f'[[m:{mPageN}]]<span style="font-size:smaller;">（[[m:Special:Permalink/{id}|固定]]）</span>より。--~~~~'
 
 ############################################################
