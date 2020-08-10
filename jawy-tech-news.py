@@ -68,6 +68,6 @@ iPage = pwb.Page(incub, 'Wy/ja/Wikivoyage:お知らせ')
 # 先ほどの文字列を最下部に足して
 iPage.text += addTxt
 # 要約欄の文字列を生成したら
-summ = f'/* Tech News: {y}-{w} */ [[m:Special:MyLanguage/Tech/News|Tech News]] 配信。[[m:{mPageN}]]（[[m:Special:Permalink/{id}|固定]]）より'
+summ = f'ボットによる: /* Tech News: {y}-{w} */ [[m:Special:MyLanguage/Tech/News|Tech News]] 配信。[[m:{mPageN}]]（[[m:Special:Permalink/{id}|固定]]）より'
 # 投稿する
 iPage.save(summary = summ, minor = False)
